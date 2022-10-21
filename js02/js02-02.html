@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>타입 변환</title>
+</head>
+<script>
+    let num = prompt('숫자를 입력하세요.')
+    typeof(num)
+    document.write(" <h3>입력하신 "+ num+ " 값은 " + typeof(num)+ " 타입 입니다 이 타입을 숫자로 변환 하겠습니다." +Number(num) +"으로 변환 완료</h3>" + "타입 :" + typeof(Number(num)))+"<br>"
+    let num2 = Number(num)
+    document.write("<h3>이제 숫자 타입을 string()타입을 이용하여 문자로 변환하겠습니다 숫자 : " + num2 +"는"+ typeof(num2) +"타입으로 문자 타입으로 변환하면 이렇게 됩니다.</h3>"+String(num2)+"으로 변환 완료"+typeof(String(num2)))
+</script>
+<body>
+    
+</body>
+</html>

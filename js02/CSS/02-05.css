@@ -1,0 +1,6 @@
+table *{
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+table {border-collapse: collapse;}
