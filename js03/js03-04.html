@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        table *{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .c1{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        
+    </style>
+    <!-- <script>  
+        let on = prompt(`온도를 입력해주세요`)
+
+
+        
+        
+        if(on < 16){
+            document.write(`지금 온도는 ${on}도이며, 상태는(정상온도를 벗어났습니다.)`)
+        }
+        if(on >= 16 && on < 22){
+            document.write(`지금 온도는 ${on}도이며, 상태는(시원하네요.`)
+        }
+        if(on >= 22 && on < 28){
+            document.write(`지금 온도는 ${on}도이며, 상태는(보통이에요.)`)
+        }
+        if(on >= 28 && on < 32){
+            document.write(`지금 온도는 ${on}도이며, 상태는(갑갑하네요.)`)
+        }
+        if(on >=32){
+            document.write(`지금 온도는 ${on}도이며, 상태는(정상온도를 벗어났습니다.)`)
+        }
+        
+        
+
+    
+    
+    </script> -->
+    
+</head>
+<body>
+    <!-- <script src="/js03/JS/js03-04.js"></script> -->
+    <table class="con">
+        <tr>
+            <th>16미만</th>
+            <th>16이상~22미만</th>
+            <th>252이상~28미만</th>
+            <th>28이상~32미만</th>
+            <th>32~이상</th>
+        </tr>
+        <tr class="gird">
+            <td id="c1" > </td>
+            <td id="c2"> </td>
+            <td id="c3"> </td>
+            <td id="c4"> </td>
+            <td id="c5"> </td>
+        </tr>
+        <tr>
+            <td>정상온도를 벗어났습니다</td>
+            <td>시원하네요</td>
+            <td>보통이에요</td>
+            <td>갑갑하네요</td>
+            <td>정상온도를 벗어났습니다</td>
+        </tr>
+    </table>
+    <script>  
+        let on = prompt(`온도를 입력해주세요`)
+
+        
+        
+        
+        if(on < 16){
+            document.write(`지금 온도는 ${on}도이며, 상태는(정상온도를 벗어났습니다.)`);
+            document.getElementById('c1').style.backgroundColor= "purple"
+                  
+            
+        }
+        if(on >= 16 && on < 22){
+            document.write(`지금 온도는 ${on}도이며, 상태는(시원하네요.`)
+            document.getElementById('c2').style.backgroundColor= "aqua"
+        }
+        if(on >= 22 && on < 28){
+            document.write(`지금 온도는 ${on}도이며, 상태는(보통이에요.)`)
+            document.getElementById('c3').style.backgroundColor= "yellow" 
+        }
+        if(on >= 28 && on < 32){
+            document.write(`지금 온도는 ${on}도이며, 상태는(갑갑하네요.)`)
+            document.getElementById('c4').style.backgroundColor= "orange"
+        }
+        if(on >=32){
+            document.write(`지금 온도는 ${on}도이며, 상태는(정상온도를 벗어났습니다.)`)
+            document.getElementById('c5').style.backgroundColor= "red"
+        }
+        
+        
+
+    
+    
+    </script>
+</body>
+</html>
