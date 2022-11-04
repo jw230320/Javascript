@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fi=[];
+       for(n=0; n<45; n++){
+            fi.push(0);
+       }
+    
+       for(o=1;o<10000;o++){
+            var arr=[];
+                for(i=1;i<7;i++){
+                    var r=Math.floor(Math.random()*45)+1;
+                if(arr.indexOf(r) == -1){
+                    arr.push(r);
+                }else{
+                    i--;    
+                }
+            
+            }
+            for(j=1; j<46; j++){
+                if(arr.indexOf(j) !== -1 ){
+                    fi[j-1]++
+                }
+                
+            }
+
+        
+        }
+        for(u=1; u<46; u++){
+        document.write(u+'번째 : '+fi[u-1] + '<br>')}
+    
+    </script>
+</body>
+</html>

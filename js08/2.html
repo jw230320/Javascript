@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let bun=[]
+        for(i=1; i<=45; i++){
+            bun.push(i)
+        }
+        for(m=1;m<=1000;m++){
+        let ball=[]
+        for(j=1; j<=6; j++){
+             let r=Math.floor(Math.random()*45)+1
+             
+             if(ball.indexOf(r) == -1){
+                ball.push(r)
+             }else{
+                j--
+             }
+        }
+
+    }
+    
+    console.log(ball)
+        
+
+    </script>
+</body>
+</html>

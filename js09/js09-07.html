@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =Number(prompt('숫자를 입력해주세요'))
+        let b =Number(prompt('숫자를 입력해주세요'))
+        function sumAll(a,b){
+            let hap = 0
+            for (let i=a; i<=b; i++){
+                hap = hap+ i
+            }
+            return hap
+        }
+
+        console.log(`${a}부터${b}까지의 합은 : ${sumAll(a,b)}`)
+
+    </script>
+</body>
+</html>

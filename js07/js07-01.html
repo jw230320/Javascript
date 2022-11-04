@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        table * {
+            border: 1px solid black;
+            padding: 20px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+        
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let box="";
+
+        box +="<table><tr>";
+        for(i=1;i<11;i++){
+            box +=`<td>${i}</td>`
+             }
+        box +="</tr><tr>";
+        for(j=11;j<21;j++){
+            box +=`<td>${j}</td>`
+        }
+        
+         box +="</tr><tr>";
+         for(a=21;a<31;a++){
+            box +=`<td>${a}</td>`
+        }
+        
+        box +="</tr><tr>";
+         for(h=31;h<41;h++){
+            box +=`<td>${h}</td>`
+        }
+        box +="</tr><tr>";
+        for(o=41;o<51;o++){
+            box +=`<td>${o}</td>`
+        }
+        
+    
+        
+         box +="</tr></table>";
+
+         document.write(box)
+    </script>
+</body>
+</html>

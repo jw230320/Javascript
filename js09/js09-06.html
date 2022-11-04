@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>0</div>
+    <button onclick="updn(4)">1증가</button>
+    <button onclick="updn(-4)">-1감소</button>
+    <!-- <button onclick="updn(10)">10증가</button>
+
+    <script>
+        let num=0
+        function updn(x){
+            num=num+x
+            
+            document.write(`<div>${num}</div>
+                <button onclick="updn(${1})">1증가</button>
+                <button onclick="updn(${5})">5증가</button>
+                <button onclick="updn(${10})">10증가</button>`)
+                
+                
+                document.close()
+        } -->
+        <script>
+            let num=0
+            function updn(x){
+                num= num+x
+                if(x > 0){
+                    document.write(`<div>${num}</div>
+                    <button onclick="updn(${x})">1증가</button>
+                    <button onclick="updn(${-x})">-1감소</button>`)
+                    document.close()
+            
+            
+                }else{
+                    
+                    document.write(`<div>${num}</div>
+            <button onclick="updn(${-x})">1증가</button>
+            <button onclick="updn(${x})">-1감소</button>`)
+
+                }
+                document.close()
+            }
+
+        </script>
+    </script>
+</body>
+</html>

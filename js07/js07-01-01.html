@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+          table * {
+            border: 1px solid black;
+            padding: 20px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+        
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let tab="";
+        
+        tab +='<table><tr>'
+        for(i=1;i<51;i++){
+            // if(i>45){
+            //     tab +=`<td></td>`
+            // }
+            if(i<51){
+                tab +=`<td>${i}</td>`
+            }
+            if(i%10==0){
+            tab +='</tr><tr>'
+            }
+            
+        }
+        tab +='</tr></table>'
+        document.write(tab)
+    </script>
+</body>
+</html>

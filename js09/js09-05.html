@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        b=Number(prompt('몇년도입니까?'))
+        function a(b){
+            return(b%4 ==0)||(b%400 == 0)&&(b%100 !== 0)
+            
+
+        }
+        document.write(`${b}년은 윤년입니까? ${a(b)}`)
+
+        // function a(b){
+        //     if(b%4 == 0 || b%400 == 0 && b%100 !==0){
+        //         document.write(`${b}는 윤년입니다`)
+        //         return '윤년입니다'
+        //     }else{
+        //         document.write(`${b}는 아닙니다`)
+        //         return '윤년아닙니다'
+        //     }
+        // }
+    </script>
+</body>
+</html>

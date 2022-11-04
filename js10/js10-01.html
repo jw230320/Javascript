@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        
+        let box= []
+        for(i=1;i<=7;i++){
+            let r=Math.floor(Math.random()*100)
+            box.push(r)
+        }
+        console.log(box)
+
+        function min(o){
+          let minso=o[0]
+
+          if(minso<o[1]){
+            minso=minso
+          }
+          else{
+            minso=o[1]}
+            
+          if(minso<o[2]){
+            minso=minso
+          }else{
+          
+            minso=o[2]
+          }
+          if(minso<o[3]){
+            minso=minso
+          }else{
+          
+            minso=o[3]}
+          if(minso<o[4]){
+            minso=minso
+          }else{
+          
+            minso=o[4]
+          }if(minso<o[5]){
+            minso=minso
+          }else{
+          
+            minso=o[5]
+          }if(minso<o[6]){
+            minso=minso
+          }else{
+          
+            minso=o[6]
+          }
+       
+          return minso
+            
+        }
+        console.log(min(box))
+       
+       
+    </script>
+</body>
+</html>

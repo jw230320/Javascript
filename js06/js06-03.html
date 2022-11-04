@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let my =4;
+        let dice = d1 = d2= d3= d4 = d5 =d6 =d7 =d8 =d9 = 0;
+        for(let i=0; i<1000000; i++){
+            dice = parseInt(Math.random()*12)+1 //Math.floor() : 모든소숫점이하 버리는거
+            dice = Math.floor(Math.random()*6)+1 //확률조작 if문안에 if <= 넣기
+            if(dice==1)d1++;
+            else if(dice==2 || dice== 9)d2++;
+            else if(dice==3)d3++;
+            else if(dice==4)d4++;
+            else if(dice==5)d5++;
+            else if(dice==6)d6++;
+            else if(dice==7)d7++;
+            else if(dice==8)d8++;
+            else if(dice==9)d9++;
+            
+            
+
+        }
+        document.write('주사위 1의 개수 : '+d1+'<br>'
+        +'주사위 2의 개수 : '+d2+'<br>'
+        +'주사위 3의 개수 : '+d3+'<br>'
+        +'주사위 4의 개수 : '+d4+'<br>'
+        +'주사위 5의 개수 : '+d5+'<br>'
+        +'주사위 6의 개수 : '+d6+'<br>'
+        )
+
+    </script>
+</body>
+</html>

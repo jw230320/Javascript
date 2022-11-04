@@ -22,6 +22,4 @@ list += `<tr><td>x</td><td>x</td><td>x</td><td>10원</td><td>${s}</td></tr></tab
 
 
 
-
-
 document.write(list);

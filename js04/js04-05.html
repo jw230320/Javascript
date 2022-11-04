@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        table td{
+            border: 1px solid black;
+            background-color: beige;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let list="";
+        list +=`<table><tr>`;
+         for(let i=40; i>0; i--){
+            list +=`<td>${i}</td>`;}
+        list +=`</tr></table>`;
+        document.write(list)
+       
+       
+        
+        // for(let o=0; o=>38; --o){
+        //     document.write(`${o}번째입니다.<br>`)
+        // }
+    </script>
+</body>
+</html>
